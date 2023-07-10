@@ -19,8 +19,8 @@
     }
 
     img {
-        max-width: 150%;
-        max-height: 150%;
+        max-width: 180%;
+        max-height: 180%;
         transition: transform 1s ease-in-out;
         margin-top: -1.5cm;
     }
@@ -33,7 +33,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 18px;
         animation: fadeIn 2s ease-in-out;
     }
     
@@ -43,7 +43,7 @@
         color: #ffffff;
         border: none;
         border-radius: 12px;
-        padding: 8px 38px;
+        padding: 6px 42px;
         cursor: pointer;
         transition: background-color 0.3s ease-in-out;
     }
@@ -64,7 +64,7 @@
 </head>
 <body>
     <div class="container">
-        <img id="logo" src="https://i.postimg.cc/WznJ6QQP/Snapinsta-app-357811599-792228002607716-4508097656076684628-n-1080.png" alt="Logo" style="max-width: 150%; max-height: 150%; transition: transform 1s ease-in-out; transform: scale(1.50);">
+        <img id="logo" src="https://i.postimg.cc/WznJ6QQP/Snapinsta-app-357811599-792228002607716-4508097656076684628-n-1080.png" alt="Logo" style="max-width: 190%; max-height: 190%; transition: transform 1s ease-in-out; transform: scale(1.50);">
         <div class="button-container" style="display: none; top: calc(50% + 2cm);">
             <button class="btn btn-primary button" onclick="selectLanguage('Italian')">Italian</button>
             <button class="btn btn-primary button" onclick="selectLanguage('English')">English</button>
@@ -79,7 +79,7 @@
 
             var logo = document.getElementById('logo');
             logo.style.transform = 'translateY(-1.5cm)';
-        }, 2000);
+        }, 1600);
 
         function selectLanguage(language) {
             if (language === "Italian") {
