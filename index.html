@@ -22,18 +22,18 @@
         max-width: 170%;
         max-height: 170%;
         transition: transform 1s ease-in-out;
-        margin-top: -6cm;
+        margin-top: -2cm;
     }
 
     .button-container {
         position: absolute;
-        top: calc(50% + 2cm);
-        left: 50%;
+        top: calc(50% + 4cm);
+        left: calc(50% + 0.1px); 
         transform: translate(-50%, -50%);
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
+        flex-wrap: flex;
+        gap: 14px;
         animation: fadeIn 2.7s ease-in-out;
     }
     
@@ -43,10 +43,10 @@
         color: #ffffff;
         border: 2px solid #9e917f;
         border-radius: 12px;
-        padding: 7px 48px;
         cursor: pointer;
         transition: background-color 0.3s ease-in-out;
-font-size: 24px;
+        font-size: 24px;
+        width: 180px;
     }
 
     .button:hover {
@@ -66,7 +66,7 @@ font-size: 24px;
 <body>
     <div class="container">
         <img id="logo" src="https://i.postimg.cc/RV35kDpy/IMG-0505.jpg" alt="Logo" style="max-width: 170%; max-height: 170%; transition: transform 1s ease-in-out; transform: scale(1.50);">
-        <div class="button-container" style="display: none; top: calc(50% + 2cm);">
+        <div class="button-container" style="display: none; top: calc(50% + 4cm);">
             <button class="btn btn-primary button" onclick="selectLanguage('Italian')">Italian</button>
             <button class="btn btn-primary button" onclick="selectLanguage('English')">English</button>
         </div>
@@ -92,3 +92,4 @@ font-size: 24px;
     </script>
 </body>
 </html>
+
